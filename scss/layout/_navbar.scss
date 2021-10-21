@@ -1,16 +1,31 @@
 @import "../utils/mixins";
 
-.logo-img{
-    display: none;
-    @media all and (min-width: 990px){
-        display: block;
-    }
-}
+
+// .logo-img{
+//     display: none;
+//     @media all and (min-width: 990px){
+//         display: block;
+//     }
+// }
 nav {
     display: flex;
     justify-content: center;
     @media all and (min-width:650px) {
         justify-content: space-around;
+    }
+    @media all and(min-width: 980px) {
+        justify-content: space-between;
+    }
+    &.nav-mobile-version{
+        @media all and (min-width:980px){
+            display: none;
+        }
+    }
+    &.nav-desktop-version{
+        display: none;
+        @media all and (min-width:980px){
+            display: flex;
+        }
     }
 }
 
@@ -24,18 +39,34 @@ ul {
     transition: all 0.3 ease;
     transform: scaleY(0);
     transform-origin: center top;
-    &.open{
-        transform:scaleY(1)
-    }
+    // turn nav
     @media all and (min-width:650px) {
-        width: 80%;
-        flex-direction: row;
-        // justify-content: flex-end;
-        background-color: pink;
+            width: 80%;
+            flex-direction: row;
+            // justify-content: flex-end;
+            height: 80px;
     }
-    @media all and (min-width: 930px){
+    @media all and (min-width:980px){
         width: 50%;
+        flex-direction: row;
+        justify-content: flex-end;
+        transform: scaleY(1);
+        height: 50px;
     }
+    &.open{
+            transform:scaleY(1);
+            // @media all and (min-width:650px) {
+            //     width: 80%;
+            //     flex-direction: row;
+            //     // justify-content: flex-end;
+            //     background-color: pink;
+            //     height: 80px;
+            // }
+            // @media all and (min-width: 930px){
+            //     width: 50%;
+            // }
+    }
+        
 }
 
 li {
@@ -43,11 +74,18 @@ li {
     height: 30%;
     margin-top: 10px;
     text-align: center;
+    padding-bottom: 5px;
     @media all and (min-width:650px) {
         justify-content: flex-end;
         width: 40%;
-        background-color: aqua;
-    }    
+    }
+    @media all and (min-width: 980px){
+        border-right: 2px solid $secondary;
+        &:hover{
+            padding-bottom: 10px;
+            border-bottom: 2px solid $tercary;
+        }
+   }    
 }
 
 .profile-photo{
