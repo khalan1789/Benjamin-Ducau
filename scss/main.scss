@@ -1,0 +1,9 @@
+@import "base/base";
+@import "layout/navbar.scss";
+@import "utils/variables";
+@import "utils/mixins";
+@import "composants/burgerMenu";
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}

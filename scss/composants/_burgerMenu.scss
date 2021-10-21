@@ -1,0 +1,32 @@
+// Code for the burger menu
+
+#burgerLink {
+    margin: 10px;
+}
+#burger {
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background: $principal;
+    position: relative;
+        &::before{
+            @include burger-style;
+            top: -7px;
+        }
+        &::after{
+            @include burger-style;
+            top: 7px;
+        }
+    &.open{
+            background: transparent;
+                &::before{
+                    transform : rotate(45deg);
+                    top:0;
+                }
+                &::after{
+                    transform : rotate(-45deg);
+                    top:0;
+                }
+            }        
+}
+
