@@ -1,4 +1,5 @@
-@import "../utils/mixins";
+// @import "../utils/mixins";
+@import "../animations/keyframes";
 
 
 // .logo-img{
@@ -31,7 +32,7 @@ nav {
 
 ul {
     width: 100%;
-    height: 140px;
+    // height: 140px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -39,6 +40,7 @@ ul {
     transition: all 0.3 ease;
     transform: scaleY(0);
     transform-origin: center top;
+    margin-bottom: 0px;
     // turn nav
     @media all and (min-width:650px) {
             width: 80%;
@@ -55,16 +57,13 @@ ul {
     }
     &.open{
             transform:scaleY(1);
-            // @media all and (min-width:650px) {
-            //     width: 80%;
-            //     flex-direction: row;
-            //     // justify-content: flex-end;
-            //     background-color: pink;
-            //     height: 80px;
-            // }
-            // @media all and (min-width: 930px){
-            //     width: 50%;
-            // }
+            margin-bottom: 50px;
+            height: 140px;
+            @media all and(min-width:650px){
+                height: 80px;
+                margin-bottom: 40px;
+            }
+            
     }
         
 }
@@ -75,6 +74,8 @@ li {
     margin-top: 10px;
     text-align: center;
     padding-bottom: 5px;
+    transform:scaleY(1);
+    transition: ease-in-out 0.2s;
     @media all and (min-width:650px) {
         justify-content: flex-end;
         width: 40%;
@@ -83,14 +84,9 @@ li {
         border-right: 2px solid $secondary;
         &:hover{
             padding-bottom: 10px;
-            border-bottom: 2px solid $tercary;
+            border-bottom: 2px solid $secondary;
+            // animation: overflow $HoverLinkRight 0.2s forwards;
+            // animation: overflow $Hover-link-bottom 0.2s forwards;
         }
    }    
-}
-
-.profile-photo{
-    height: 150px;
-    width: 150px;
-    object-fit: contain;
-    border-radius: 50%;
 }

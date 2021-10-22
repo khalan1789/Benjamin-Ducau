@@ -1,0 +1,36 @@
+//presentation zone
+
+.presentation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media all and (min-width: 650px){
+        justify-content: space-around;
+    }
+}
+.presentation-text{
+    display: flex;
+    flex-flow: column-reverse;
+    align-items: center;
+}
+
+.profile-photo{
+    width: 150px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+h1{
+    flex-wrap: wrap;
+    width: 68%;
+    @media all and (min-width:392px){
+        width: auto;
+    }
+}
+
+.presentation-firstname{
+    margin-right: 10px;
+}
+
+.presentation-hello{
+    margin-right: 10px;
+}

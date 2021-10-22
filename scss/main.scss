@@ -1,7 +1,9 @@
 @import "utils/mixins";
 @import "utils/variables";
+@import "animations/keyframes";
 @import "base/base";
 @import "layout/navbar.scss";
+@import "layout/presentation";
 @import "composants/burgerMenu";
 
 body{
