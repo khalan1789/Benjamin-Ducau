@@ -1,0 +1,19 @@
+// header animation
+
+@keyframes HoverLinkRight{
+    0%{
+       transform: scaleY(1);
+    }
+    100%{
+        transform: scaleY(0);
+     }
+}
+
+@keyframes Hover-link-bottom {
+    0%{
+        transform: translateX(80px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}

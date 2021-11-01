@@ -8,3 +8,9 @@
         transform-origin: center;
         transition: all 0.3 ease;
 }
+
+@mixin center-element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
