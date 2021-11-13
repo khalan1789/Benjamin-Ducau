@@ -1,3 +1,79 @@
-.projets-list{
+.projects-list{
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 0px;
+    li{
+        display: flex;
+        flex-direction: column;
+        border: solid 2px $secondary;
+        border-radius: 3px;
+        margin: 15px;
+        box-shadow: 0px 0px 4px 2px $secondary; 
+        padding : 4px;
+        h3{
+            text-align: center;
+            font-weight: 900;
+            color: $secondary;
+            text-shadow: -1px 2px 4px $secondary;
+            font-size: 1.7em;
+        }
+        h4{
+            text-align: center;
+            color: $secondary;
+        }
+    }
+}
+
+.projects-list-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    button{
+        border: 1px solid $secondary;
+        // border: 1px solid white;
+        border-radius: 4px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        width: 50%;
+        text-align: center;
+        background-color: black;
+        box-shadow: 0px 0px 3px 1px $secondary;
+        width: 130px;
+        height: 30px;
+        @media all and (min-width: 900px){
+            // margin-top: 15px;
+            // margin-bottom: 15px;
+            margin: 15px 0px;
+        }
+        &:hover{
+            box-shadow: 0px 0px 6px 1px $tercary;
+            border: 2px solid $tercary;
+            cursor: pointer;
+        }
+    }
+        
+}
+
+.projects-list-listimg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projects-list-img{
+        width: 100px;
+        height: 100px;
+        margin:2px;
+        @media all and(min-width: 600px) {
+            margin: 4px;
+        }
+        @media all and(min-width: 900px) {
+            margin: 5px;
+            margin-bottom: 10px;
+            width: 150px;
+            height: 150px;
+        }
 }

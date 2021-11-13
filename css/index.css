@@ -190,8 +190,14 @@ h1 {
 }
 .projects-list li h3 {
   text-align: center;
-  font-weight: 800;
-  color: #f02fd0;
+  font-weight: 900;
+  color: #09b674;
+  text-shadow: -1px 2px 4px #09b674;
+  font-size: 1.7em;
+}
+.projects-list li h4 {
+  text-align: center;
+  color: #09b674;
 }
 
 .projects-list-btn {
@@ -211,6 +217,41 @@ h1 {
   box-shadow: 0px 0px 3px 1px #09b674;
   width: 130px;
   height: 30px;
+}
+@media all and (min-width: 900px) {
+  .projects-list-btn button {
+    margin: 15px 0px;
+  }
+}
+.projects-list-btn button:hover {
+  box-shadow: 0px 0px 6px 1px #f02fd0;
+  border: 2px solid #f02fd0;
+  cursor: pointer;
+}
+
+.projects-list-listimg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projects-list-img {
+  width: 100px;
+  height: 100px;
+  margin: 2px;
+}
+@media all and (min-width: 600px) {
+  .projects-list-img {
+    margin: 4px;
+  }
+}
+@media all and (min-width: 900px) {
+  .projects-list-img {
+    margin: 5px;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 150px;
+  }
 }
 
 #burgerLink {
