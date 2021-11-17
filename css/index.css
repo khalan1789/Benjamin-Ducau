@@ -172,12 +172,20 @@ h1 {
   margin-right: 10px;
 }
 
+.projects-section-title {
+  margin: 2%;
+  border-bottom: 3px solid #f02fd0;
+  text-shadow: 2px 1px 5px white;
+  font-weight: bold;
+}
+
 .projects-list {
   list-style-type: none;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-left: 0px;
+  align-items: center;
 }
 .projects-list li {
   display: flex;
@@ -187,6 +195,16 @@ h1 {
   margin: 15px;
   box-shadow: 0px 0px 4px 2px #09b674;
   padding: 4px;
+}
+@media all and (min-width: 900px) {
+  .projects-list li {
+    width: 80%;
+  }
+}
+@media all and (min-width: 1100px) {
+  .projects-list li {
+    width: 60%;
+  }
 }
 .projects-list li h3 {
   text-align: center;
@@ -198,6 +216,10 @@ h1 {
 .projects-list li h4 {
   text-align: center;
   color: #09b674;
+}
+.projects-list li p {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .projects-list-btn {
@@ -252,6 +274,10 @@ h1 {
     width: 150px;
     height: 150px;
   }
+}
+
+.about {
+  margin: 2%;
 }
 
 #burgerLink {
