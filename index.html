@@ -9,14 +9,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/77c889fc12.js"
+      crossorigin="anonymous"
+    ></script>
 </head>
 <body>
    <header>
        <nav class="nav-mobile-version">
            <ul id="burgerListLink">
                <li><a href="#">A propos de moi</a></li>
-               <li><a href="#">Projets</a></li>
-               <li><a href="#">Me contacter</a></li>
+               <li><a href="#projects">Projets</a></li>
+               <li><a href="#footer">Me contacter</a></li>
            </ul>
            <a id="burgerLink" href="#" ><span id="burger"></span></a>
        </nav>
@@ -25,7 +29,7 @@
            <ul>
                <li><a href="#">A propos de moi</a></li>
                <li><a href="#projects">Projets</a></li>
-               <li><a href="#">Me contacter</a></li>
+               <li><a href="#footer">Me contacter</a></li>
            </ul>
        </nav>
    </header>
@@ -93,18 +97,6 @@
            <h3 class="projects-section-title">Mes projets réalisés</h3>
            <ul class="projects-list">
                <li>
-                    <h3>Reservia</h3>
-                    <p>À partir de deux maquettes, l'une en version desktop et l'autre en version mobile, création d'une page web entièrement responsive du site Réservia.</p>
-                    <h4>Les technos utilisées :</h4>
-                    <div class="projects-list-listimg">
-                        <img class="projects-list-img" src="./images/html.png" alt="logo html5"/><img class="projects-list-img" src="./images/css.jpg" alt="logo css"/>
-                    </div>
-                    <div class="projects-list-btn">
-                       <button><a target="_blank" href="https://khalan1789.github.io/Project-Reservia/">Voir le projet</a></button>
-                       <button><a target="_blank" href="https://github.com/khalan1789/Project-Reservia">Le code source</a></button>
-                    </div>  
-               </li>
-               <li>
                     <h3>Oh My Food</h3>
                     <p> À partir de maquettes mobiles, création de la page d'accueuil OhMyFood et de cartes de restaurants avec des animations, le tout entièrement responsive.</p>
                     <h4>Les technos utilisées :</h4>
@@ -120,7 +112,7 @@
                 </li>
                <li>
                     <h3>So Pekocko</h3>
-                    <p>Création d'une API sécurisée et d'une base de donnée MongoDB Atlas, la partie front-end étant déjà créée avant.</p>
+                    <p>La partie front-end ayant déjà créée auparavant, j'ai été chargé de la partie back-end : création d'une API sécurisée et d'une base de donnée MongoDB Atlas.</p>
                     <h4>Les technos utilisées :</h4>
                     <div class="projects-list-listimg">
                         <img class="projects-list-img" src="./images/express.jpg" alt="logo express"/>
@@ -136,8 +128,8 @@
                 </li>
                <li>
                     <h3>La Chouette Agence</h3>
-                    <br>Réalisation d'un audit SEO du site La Chouette Agence et création d'un rapport en tenant compte des contraintes d'accessibilité. </br>
-                    Optimisation et refonte du code en y apportant 10 améloriations issues du rapport et ce ne modifiant uniquement que les parties HTML et CSS. </p>
+                    <p><i class="far fa-hand-point-right"></i> Réalisation d'un audit SEO du site La Chouette Agence et création d'un rapport en tenant compte des contraintes d'accessibilité. 
+                    </br><i class="fas fa-hand-point-right"></i> Optimisation et refonte du code en y apportant 10 améloriations issues du rapport et ce ne modifiant uniquement que les parties HTML et CSS. </p>
                     <h4>Les technos utilisées :</h4>
                     <div class="projects-list-listimg">
                         <img class="projects-list-img" src="images/lighthouse.png" alt="logo lighthouse"/>
@@ -148,22 +140,22 @@
                         <img class="projects-list-img" src="./images/css.jpg" alt="logo css"/>
                     </div>
                     <div class="projects-list-btn">Pour le projet avant modification : <br>
-                        <button><a target="_blank" href="https://khalan1789.github.io/La_Chouette_agence_optimised/">Voir le projet avant</a></button> 
+                        <button><a target="_blank" href="https://khalan1789.github.io/P4_La_chouettte_agence_avant_optimisation/">Voir le projet avant</a></button> 
                         <button><a target="_blank" href="https://github.com/khalan1789/P4_La_chouettte_agence_avant_optimisation"><i>Le code source</i></button>
                     </div>
                     <div class="projects-list-btn">Pour le projet Après modification : <br>
-                        <button><a target="_blank" href="https://github.com/khalan1789/La_Chouette_agence_optimised">Voir le projet après</a></button>
+                        <button><a target="_blank" href="https://khalan1789.github.io/La_Chouette_agence_optimised/">Voir le projet après</a></button>
                         <button><a target="_blank" href="https://github.com/khalan1789/La_Chouette_agence_optimised"><i>Le code source</i></a></button>
                     </div>
                </li>
                <li>
                     <h3>Groupomania</h3>
                     <p>Réalisation from scratch d'un réseau social interne d'entreprise pour la société Groupomania suivant un cahier des charges prédéfini : </br>
-                    - base de données sous MySQL </br>
-                    - serveur sous NodeJs / Express </br>
-                    - front-end en JS avec liberté d'utilisation d'un framwork ou non </br>
-                    - possibilité de partager des articles et/ou des images, ainsi que de les commenter </br>
-                    - mise en place d'un système de modération </br>
+                    </br><i class="fas fa-hand-point-right"></i> Base de données sous MySQL </br>
+                        <i class="fas fa-hand-point-right"></i> Serveur sous NodeJs / Express </br>
+                        <i class="fas fa-hand-point-right"></i> Front-end en JS avec liberté d'utilisation d'un framwork ou non </br>
+                        <i class="fas fa-hand-point-right"></i> Possibilité de partager des articles et/ou des images, ainsi que de les commenter </br>
+                        <i class="fas fa-hand-point-right"></i> Mise en place d'un système de modération </br>
                     </p>
                     <h4>Les technos utilisées :</h4>
                     <div class="projects-list-listimg">
@@ -191,9 +183,28 @@
                     <div class="projects-list-btn"> <button><a target="_blank" href="https://github.com/khalan1789/Groupomania-Social-Network-Project">Voir le projet</a></button>
                     </div>
                </li>
+               <li>
+                <h3>Reservia</h3>
+                <p>À partir de deux maquettes, l'une en version desktop et l'autre en version mobile, création d'une page web entièrement responsive du site Réservia.</p>
+                <h4>Les technos utilisées :</h4>
+                <div class="projects-list-listimg">
+                    <img class="projects-list-img" src="./images/html.png" alt="logo html5"/><img class="projects-list-img" src="./images/css.jpg" alt="logo css"/>
+                </div>
+                <div class="projects-list-btn">
+                   <button><a target="_blank" href="https://khalan1789.github.io/Project-Reservia/">Voir le projet</a></button>
+                   <button><a target="_blank" href="https://github.com/khalan1789/Project-Reservia">Le code source</a></button>
+                </div>  
+           </li>
            </ul>
        </section>
-   </main> 
+   </main>
+   <footer id="footer">
+       <h3><i class="far fa-hand-point-down finger-left"></i>  Pour me contacter  <i class="far fa-hand-point-down finger-right"></i></h3>
+       <div class="footer-link">
+           <a target="_blank" href="https://www.linkedin.com/in/benjamin-ducau/"><img  class="footer-link-logo" src="./images/linkedin2.png" alt="logo linkedin"/></a>
+           <a><img  class="footer-link-logo" src="./images/gmail.jpeg" alt="logo gmail"/></a>
+       </div>
+   </footer>
    <script src="main.js"></script>
 </body>
 </html>
