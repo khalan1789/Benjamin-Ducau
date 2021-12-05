@@ -1,9 +1,7 @@
 footer{
     margin: 2%;
     h3{
-        border-bottom: 3px solid $tercary;
-        text-shadow: 2px 1px 5px $principal;
-        font-weight: bold;
+        @include title-section-decoration;
         text-align: center;
     }
     a{
@@ -19,6 +17,12 @@ footer{
     .finger-right{
         margin-left: 2%;
     }
+    h5{
+        text-align: center;
+        &:hover{
+            text-decoration: $tercary;
+        }
+    }
 }
 
 .footer-link{
@@ -28,6 +32,7 @@ footer{
     @media all and(min-width: 900px) {
        flex-direction: row;
        justify-content: center;
+       flex-wrap: wrap;
     }
 }
 
@@ -38,5 +43,11 @@ footer{
         // width: 120px;
         // height: 120px;
 
+    }
+}
+.footer-link-back{
+    &:hover{
+        color: $secondary;
+        text-shadow: 1px 0px 1px;
     }
 }

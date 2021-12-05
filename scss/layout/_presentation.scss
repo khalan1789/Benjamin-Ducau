@@ -1,6 +1,8 @@
+// @import "../animations/keyframes";
+
 //presentation zone
 
-.presentation {
+#presentation {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -12,6 +14,9 @@
     display: flex;
     flex-flow: column-reverse;
     align-items: center;
+    &:hover{
+        cursor: pointer;
+    }
 }
 
 .profile-photo{
@@ -33,4 +38,23 @@ h1{
 
 .presentation-hello{
     margin-right: 10px;
+    // display: inline-block;
+    &:hover{
+        animation: hello 0.5s ease-in-out;
+        // animation: turning-hello 0.9s ease-in-out;
+        // transform-origin: center;
+    }
+}
+
+.presentation-letter{
+    display: inline-block;
+    &:hover {
+        animation: Letter-rotate 0.5s ease-in-out;
+    }
+}
+
+.letter-vibration{
+    &:hover {
+        animation: letter-vibration 0.5s ease-in-out;
+    }    
 }

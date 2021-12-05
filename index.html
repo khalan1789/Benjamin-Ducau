@@ -15,7 +15,7 @@
     ></script>
 </head>
 <body>
-   <header>
+   <header id="header-zone">
        <nav class="nav-mobile-version">
            <ul id="burgerListLink">
                <li><a href="#">A propos de moi</a></li>
@@ -25,35 +25,35 @@
            <a id="burgerLink" href="#" ><span id="burger"></span></a>
        </nav>
        <nav class="nav-desktop-version">
-        <span class="logo-img"><img class="logo" src="./images/logo1min.png" alt="photo de Benjamin Ducau" /></span>
+        <span class="logo-img"><img id="logo" src="./images/logo1min.png" alt="photo de Benjamin Ducau" /></span>
            <ul>
-               <li><a href="#">A propos de moi</a></li>
+               <li><a href="#presentation">A propos de moi</a></li>
                <li><a href="#projects">Projets</a></li>
                <li><a href="#footer">Me contacter</a></li>
            </ul>
        </nav>
    </header>
    <main>
-       <div class="presentation">
+       <div id="presentation">
         <img class="profile-photo" src="./images/profil_photo.jpg" alt="photo de Benjamin Ducau" />
             <div class="presentation-text">
                 <h1>
                     <span class="presentation-firstname">
-                        <span>B</span>
-                        <span>e</span>
-                        <span>n</span>
-                        <span>j</span>
-                        <span>a</span>
-                        <span>m</span>
-                        <span>i</span>
-                        <span>n </span>
+                        <span class="presentation-letter">B</span>
+                        <span class="presentation-letter">e</span>
+                        <span class="presentation-letter">n</span>
+                        <span class="presentation-letter">j</span>
+                        <span class="presentation-letter">a</span>
+                        <span class="presentation-letter">m</span>
+                        <span class="presentation-letter">i</span>
+                        <span class="presentation-letter">n </span>
                     </span>
                     <span>  
-                        <span> D</span>
-                        <span>u</span>
-                        <span>c</span>
-                        <span>a</span>
-                        <span>u</span> 
+                        <span class="presentation-letter"> D</span>
+                        <span class="presentation-letter">u</span>
+                        <span class="presentation-letter">c</span>
+                        <span class="presentation-letter">a</span>
+                        <span class="presentation-letter">u</span> 
                     </span>
                 <!-- <span> a </span>
                 <span>f</span>
@@ -73,8 +73,8 @@
                 <span>e</span>
                 <span>r</span> -->
                 </h1>
-                <h2>
-                    <span class="presentation-hello">
+                <h2 class="presentation-hello">
+                    <span >
                         <span>H</span>
                         <span>e</span>
                         <span>l</span> 
@@ -98,7 +98,13 @@
            <ul class="projects-list">
                <li>
                     <h3>Oh My Food</h3>
-                    <p> À partir de maquettes mobiles, création de la page d'accueuil OhMyFood et de cartes de restaurants avec des animations, le tout entièrement responsive.</p>
+                    <p> À partir de maquettes mobiles, création de la page d'accueuil OhMyFood ainsi que chacune des pages correspondant aux cartes de restaurants, le tout entièrement responsive.</p>
+                    <p>Intégration d'animations comme demandé dans le cahier des charges : </br>
+                        <i class="far fa-hand-point-right"></i> Loader pour la page d'accueil</br>
+                        <i class="far fa-hand-point-right"></i> Remplissage des coeurs au survol ou au clic</br>
+                        <i class="far fa-hand-point-right"></i> Effet d'apparition en décalé des plats à l'ouverture d'une carte</br>
+                        <i class="far fa-hand-point-right"></i> Effet de coche apparaissant au survol du plat</br>  
+                    </p>
                     <h4>Les technos utilisées :</h4>
                     <div class="projects-list-listimg">
                         <img class="projects-list-img" src="./images/html.png" alt="logo html5"/>
@@ -126,6 +132,28 @@
                         <button><a target="_blank" href="https://github.com/khalan1789/So-Pejocko-Project">Voir le projet</a></button>
                     </div>
                 </li>
+                <li>
+                    <h3>Groupomania</h3>
+                    <p>Réalisation from scratch d'un réseau social interne d'entreprise pour la société Groupomania suivant un cahier des charges prédéfini : </br>
+                    </br><i class="fas fa-hand-point-right"></i> Base de données sous MySQL </br>
+                        <i class="fas fa-hand-point-right"></i> Serveur sous NodeJs / Express </br>
+                        <i class="fas fa-hand-point-right"></i> Front-end en JS avec liberté d'utilisation d'un framwork ou non </br>
+                        <i class="fas fa-hand-point-right"></i> Possibilité de partager des articles et/ou des images, ainsi que de les commenter </br>
+                        <i class="fas fa-hand-point-right"></i> Mise en place d'un système de modération </br>
+                    </p>
+                    <h4>Les technos utilisées :</h4>
+                    <div class="projects-list-listimg">
+                        <img class="projects-list-img" src="./images/vuejs.png" alt="logo VueJS"/>
+                        <img class="projects-list-img" src="./images/bootstrap.png" alt="logo Bootstrap"/>
+                        <img class="projects-list-img" src="./images/express et node.jpg" alt="logos Express et NodeJS"/>
+                        <img class="projects-list-img" src="./images/sequelize.png" alt="logo Sequelize"/>
+                        <img class="projects-list-img" src="./images/mysql.png" alt="logo MySQL"/>
+                    </div>
+                    <div class="projects-list-btn">
+                    <button><a target="_blank" href="https://github.com/khalan1789/Groupomania-Social-Network-Project">Voir le projet
+                        </a>
+                    </div>
+               </li>
                <li>
                     <h3>La Chouette Agence</h3>
                     <p><i class="far fa-hand-point-right"></i> Réalisation d'un audit SEO du site La Chouette Agence et création d'un rapport en tenant compte des contraintes d'accessibilité. 
@@ -146,28 +174,6 @@
                     <div class="projects-list-btn">Pour le projet Après modification : <br>
                         <button><a target="_blank" href="https://khalan1789.github.io/La_Chouette_agence_optimised/">Voir le projet après</a></button>
                         <button><a target="_blank" href="https://github.com/khalan1789/La_Chouette_agence_optimised"><i>Le code source</i></a></button>
-                    </div>
-               </li>
-               <li>
-                    <h3>Groupomania</h3>
-                    <p>Réalisation from scratch d'un réseau social interne d'entreprise pour la société Groupomania suivant un cahier des charges prédéfini : </br>
-                    </br><i class="fas fa-hand-point-right"></i> Base de données sous MySQL </br>
-                        <i class="fas fa-hand-point-right"></i> Serveur sous NodeJs / Express </br>
-                        <i class="fas fa-hand-point-right"></i> Front-end en JS avec liberté d'utilisation d'un framwork ou non </br>
-                        <i class="fas fa-hand-point-right"></i> Possibilité de partager des articles et/ou des images, ainsi que de les commenter </br>
-                        <i class="fas fa-hand-point-right"></i> Mise en place d'un système de modération </br>
-                    </p>
-                    <h4>Les technos utilisées :</h4>
-                    <div class="projects-list-listimg">
-                        <img class="projects-list-img" src="./images/vuejs.png" alt="logo VueJS"/>
-                        <img class="projects-list-img" src="./images/bootstrap.png" alt="logo Bootstrap"/>
-                        <img class="projects-list-img" src="./images/express et node.jpg" alt="logos Express et NodeJS"/>
-                        <img class="projects-list-img" src="./images/sequelize.png" alt="logo Sequelize"/>
-                        <img class="projects-list-img" src="./images/mysql.png" alt="logo MySQL"/>
-                    </div>
-                    <div class="projects-list-btn">
-                    <button><a target="_blank" href="https://github.com/khalan1789/Groupomania-Social-Network-Project">Voir le projet
-                        </a>
                     </div>
                </li>
                <li>
@@ -202,8 +208,10 @@
        <h3><i class="far fa-hand-point-down finger-left"></i>  Pour me contacter  <i class="far fa-hand-point-down finger-right"></i></h3>
        <div class="footer-link">
            <a target="_blank" href="https://www.linkedin.com/in/benjamin-ducau/"><img  class="footer-link-logo" src="./images/linkedin2.png" alt="logo linkedin"/></a>
-           <a><img  class="footer-link-logo" src="./images/gmail.jpeg" alt="logo gmail"/></a>
+           <a href="mailto:ducaubenjamin@gmail.com"><img  class="footer-link-logo" src="./images/gmail.jpeg" alt="logo gmail"/></a>
+           <!-- <a class="footer-link-back" href="#presentation"><h5>Retour en haut</h5></a> -->
        </div>
+       <h5><a class="footer-link-back" href="#header-zone">Retour en haut</a><h5>
    </footer>
    <script src="main.js"></script>
 </body>

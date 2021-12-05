@@ -14,3 +14,9 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin title-section-decoration{
+    border-bottom: 3px solid $secondary;
+    text-shadow: 2px 1px 5px $principal;
+    font-weight: bold;
+}

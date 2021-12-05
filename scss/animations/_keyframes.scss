@@ -17,3 +17,50 @@
         transform: translateX(0px);
     }
 }
+
+// name letter rotation
+@keyframes Letter-rotate {
+    0% {
+        transform: rotateY(0deg);
+      }
+    25% {
+        color:$secondary;
+        // color:$tercary;
+    }
+    75% {
+        color:$tercary;
+        // color:$secondary;
+    }  
+    100% {
+        transform: rotateY(360deg);
+        height: 1em;
+      }
+}
+
+// hello animation
+@keyframes hello {
+    0% {
+        transform:translateX(-20px) ;
+    }
+    25% {
+        transform:translateX(20px)
+    }
+    50% {
+        transform:translateX(-20px)
+    }
+    75% {
+        transform:translateX(20px)
+    }
+    100% {
+        transform:translateX(0px)
+    }
+}
+
+@keyframes turning-hello {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}

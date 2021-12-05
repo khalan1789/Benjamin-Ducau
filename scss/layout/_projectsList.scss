@@ -1,8 +1,6 @@
 .projects-section-title{
     margin: 2%;
-    border-bottom: 3px solid $tercary;
-    text-shadow: 2px 1px 5px $principal;
-    font-weight: bold;
+    @include title-section-decoration
     // text-align: center;
 }
 
