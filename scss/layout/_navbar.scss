@@ -1,9 +1,10 @@
-// @import "../utils/mixins";
-@import "../animations/keyframes";
-
+//navbar zone
 #logo{
     width: 60px;
     height: 60px;
+    &:hover {
+        animation: logo-rotate linear 2s forwards;
+    }
 }
 nav {
     display: flex;
@@ -14,12 +15,12 @@ nav {
     @media all and(min-width: 980px) {
         justify-content: space-between;
     }
-    &.nav-mobile-version{
+    &.nav-mobile-version {
         @media all and (min-width:980px){
             display: none;
         }
     }
-    &.nav-desktop-version{
+    &.nav-desktop-version {
         display: none;
         @media all and (min-width:980px){
             display: flex;
@@ -42,8 +43,6 @@ nav {
             &:hover{
                 padding-bottom: 10px;
                 border-bottom: 2px solid $secondary;
-                // animation: overflow $HoverLinkRight 0.2s forwards;
-                // animation: overflow $Hover-link-bottom 0.2s forwards;
             }
        }    
     }
@@ -85,28 +84,3 @@ nav {
             
     }
 }
-
-
-
-// li {
-//     width: 90%;
-//     height: 30%;
-//     margin-top: 10px;
-//     text-align: center;
-//     padding-bottom: 5px;
-//     transform:scaleY(1);
-//     transition: ease-in-out 0.2s;
-//     @media all and (min-width:650px) {
-//         justify-content: flex-end;
-//         width: 40%;
-//     }
-//     @media all and (min-width: 980px){
-//         border-right: 2px solid $secondary;
-//         &:hover{
-//             padding-bottom: 10px;
-//             border-bottom: 2px solid $secondary;
-//             // animation: overflow $HoverLinkRight 0.2s forwards;
-//             // animation: overflow $Hover-link-bottom 0.2s forwards;
-//         }
-//    }    
-// }
