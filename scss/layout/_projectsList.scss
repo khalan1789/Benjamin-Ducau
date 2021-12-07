@@ -72,9 +72,8 @@
             font-size: 0.8em;
         }
         &:hover{
-            margin: 14px 0px;
             box-shadow: 0px 0px 6px 1px $tercary;
-            border: 2px solid $tercary;
+            border: 1px solid $tercary;
             cursor: pointer;
         }
     }      
