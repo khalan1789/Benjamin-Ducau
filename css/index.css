@@ -62,7 +62,7 @@ a {
   height: 60px;
 }
 #logo:hover {
-  animation: logo-rotate linear 2s forwards;
+  animation: logo-rotate linear 1.5s forwards;
 }
 
 nav {
