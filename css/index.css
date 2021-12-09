@@ -330,6 +330,10 @@ h1 {
   text-shadow: 2px 1px 5px white;
   font-weight: bold;
 }
+.about p {
+  font-size: 1.1em;
+  text-align: justify;
+}
 
 footer {
   margin: 2%;
