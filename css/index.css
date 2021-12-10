@@ -1,3 +1,32 @@
+@keyframes loading {
+  5% {
+    transform: scale(0.9);
+  }
+  15% {
+    transform: scale(1);
+  }
+  30% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(2880deg);
+  }
+}
+@keyframes end-loading {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+    z-index: 2;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-1900px) scale(0);
+    opacity: 0;
+    z-index: -2;
+  }
+}
 @keyframes logo-rotate {
   0% {
     transform: rotate(0);
@@ -55,6 +84,36 @@ body {
 a {
   text-decoration: none;
   color: white;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  animation: end-loading 2s 3.5s forwards;
+  border-bottom: 2px solid black;
+  box-shadow: 2x 12px 4px white;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.loader-img {
+  width: 100px;
+  height: 100px;
+  animation: loading 4s ease-in-out forwards;
+}
+@media all and (min-width: 900px) {
+  .loader-img {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 #logo {
@@ -443,6 +502,10 @@ footer h5:hover {
 
 body {
   font-family: "Montserrat", sans-serif;
+}
+
+.hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=index.css.map */

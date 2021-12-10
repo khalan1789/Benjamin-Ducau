@@ -1,7 +1,9 @@
 @import "utils/mixins";
 @import "utils/variables";
+@import "animations/loader";
 @import "animations/keyframes";
 @import "base/base";
+@import "layout/loader";
 @import "layout/navbar.scss";
 @import "layout/presentation";
 @import "layout/projectsList";
@@ -11,4 +13,9 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+}
+
+// class hidden to hidde the main site during loader
+.hidden {
+    display : none
 }

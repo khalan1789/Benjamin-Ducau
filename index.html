@@ -16,185 +16,192 @@
     ></script>
 </head>
 <body>
-   <header id="header-zone">
-       <nav class="nav-mobile-version">
-           <ul id="burgerListLink">
-               <li><a href="#">À propos de moi</a></li>
-               <li><a href="#projects">Projets</a></li>
-               <li><a href="#footer">Me contacter</a></li>
-           </ul>
-           <a id="burgerLink" href="#" aria-label="élément pour le burger bouton"><span id="burger"></span></a>
-       </nav>
-       <nav class="nav-desktop-version">
-        <span class="logo-img"><img id="logo" src="./images/logovert2.png" alt="logo de Benjamin Ducau" /></span>
-           <ul>
-               <li><a href="#presentation">À propos de moi</a></li>
-               <li><a href="#projects">Projets</a></li>
-               <li><a href="#footer">Me contacter</a></li>
-           </ul>
-       </nav>
-   </header>
-   <main>
-       <div id="presentation">
-        <img class="profile-photo" src="./images/profil_photo.jpg" alt="photo de Benjamin Ducau" />
-            <div class="presentation-text">
-                <h1>
-                    <span class="presentation-firstname">
-                        <span class="presentation-letter">B</span>
-                        <span class="presentation-letter">e</span>
-                        <span class="presentation-letter">n</span>
-                        <span class="presentation-letter">j</span>
-                        <span class="presentation-letter">a</span>
-                        <span class="presentation-letter">m</span>
-                        <span class="presentation-letter">i</span>
-                        <span class="presentation-letter">n </span>
-                    </span>
-                    <span>  
-                        <span class="presentation-letter"> D</span>
-                        <span class="presentation-letter">u</span>
-                        <span class="presentation-letter">c</span>
-                        <span class="presentation-letter">a</span>
-                        <span class="presentation-letter">u</span> 
-                    </span>
-                </h1>
-                <h2 class="presentation-hello">
-                    <span >
-                        <span>H</span>
-                        <span>e</span>
-                        <span>l</span> 
-                        <span>l</span> 
-                        <span>o</span>
-                        <span>! </span> 
-                    </span> 
-                    <span> I'</span>
-                    <span>m</span> 
-                </h2>
-            </div>
-       </div>
-       <section class="about">
-           <h3>Qui suis-je ?</h3>
-           <p>Après une carrière dans le commerce principalement axée dans le milieu de la téléphonie, j'ai décidé de changer de voie et de me reconvertir dans un domaine qui me permettrait de m'épanouir : le développement web.</p>
-           <p>Fraîchement diplômé de ma formation de Développeur Web où j'ai pu réaliser certains projets et voir le métier dans son ensemble, je souhaite aujourd'hui intégrer une équipe, essentiellement en full remote. Même si j'ai un léger penchant pour le côté front-end, j'aime tout autant cet aspect full-stack où je peux intervenir sur l'ensemble d'un projet. Vous trouverez l'ensemble de mes réalisations ci-après. </p>
-       </section>
-       <section id="projects">
-           <h3 class="projects-section-title">Mes projets réalisés</h3>
-           <ul class="projects-list">
-               <li>
-                    <h3>Oh My Food</h3>
-                    <p> À partir de maquettes mobiles, création de la page d'accueuil OhMyFood ainsi que chacune des pages correspondant aux cartes de restaurants, le tout entièrement responsive.</p>
-                    <p>Intégration d'animations comme demandé dans le cahier des charges : </br>
-                        <i class="far fa-hand-point-right"></i> Loader pour la page d'accueil</br>
-                        <i class="far fa-hand-point-right"></i> Remplissage des coeurs au survol ou au clic</br>
-                        <i class="far fa-hand-point-right"></i> Effet d'apparition en décalé des plats à l'ouverture d'une carte</br>
-                        <i class="far fa-hand-point-right"></i> Effet de coche apparaissant au survol du plat</br>  
-                    </p>
-                    <h4>Les technos utilisées :</h4>
-                    <div class="projects-list-listimg">
-                        <img class="projects-list-img" src="./images/html.png" alt="logo html5"/>
-                        <img class="projects-list-img" src="./images/css.jpg" alt="logo css"/>
-                        <img class="projects-list-img" src="./images/sass.jpg" alt="logo sass"/>
-                    </div>
-                    <div class="projects-list-btn">
-                        <a target="_blank" href="https://khalan1789.github.io/OhMyFood/">Voir le projet</a>
-                        <a target="_blank" href="https://github.com/khalan1789/Project-Reservia">Le code source</a>
-                    </div>
-                </li>
-               <li>
-                    <h3>So Pekocko</h3>
-                    <p>La partie front-end ayant déjà créée auparavant, j'ai été chargé de la partie back-end : création d'une API sécurisée et d'une base de donnée MongoDB Atlas.</p>
-                    <h4>Les technos utilisées :</h4>
-                    <div class="projects-list-listimg">
-                        <img class="projects-list-img" src="./images/express.jpg" alt="logo express"/>
-                        <img class="projects-list-img" src="./images/nodejs.png" alt="logo nodejs"/>
-                        <img class="projects-list-img" src="./images/mongoDB.jpeg" alt="logo mongoDB"/>
-                        <img class="projects-list-img" src="./images/mongoose.png" alt="logo mongoose"/>
-                        <img class="projects-list-img" src="./images/postman.png" alt="logo postman"/>
-                    </div>
+    <!-- Loader zone -->
+    <div class="loader">
+        <span><img class="loader-img" src="./images/logovert2.png" alt="logo loader de la page"></span>
+    </div>
+    <!-- Main zone -->
+    <div class="main-zone hidden">
+        <header id="header-zone">
+        <nav class="nav-mobile-version">
+            <ul id="burgerListLink">
+                <li><a href="#">À propos de moi</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#footer">Me contacter</a></li>
+            </ul>
+            <a id="burgerLink" href="#" aria-label="élément pour le burger bouton"><span id="burger"></span></a>
+        </nav>
+        <nav class="nav-desktop-version">
+            <span class="logo-img"><img id="logo" src="./images/logovert2.png" alt="logo de Benjamin Ducau" /></span>
+            <ul>
+                <li><a href="#presentation">À propos de moi</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#footer">Me contacter</a></li>
+            </ul>
+        </nav>
+        </header>
+        <main>
+        <div id="presentation">
+            <img class="profile-photo" src="./images/profil_photo.jpg" alt="photo de Benjamin Ducau" />
+                <div class="presentation-text">
+                    <h1>
+                        <span class="presentation-firstname">
+                            <span class="presentation-letter">B</span>
+                            <span class="presentation-letter">e</span>
+                            <span class="presentation-letter">n</span>
+                            <span class="presentation-letter">j</span>
+                            <span class="presentation-letter">a</span>
+                            <span class="presentation-letter">m</span>
+                            <span class="presentation-letter">i</span>
+                            <span class="presentation-letter">n </span>
+                        </span>
+                        <span>  
+                            <span class="presentation-letter"> D</span>
+                            <span class="presentation-letter">u</span>
+                            <span class="presentation-letter">c</span>
+                            <span class="presentation-letter">a</span>
+                            <span class="presentation-letter">u</span> 
+                        </span>
+                    </h1>
+                    <h2 class="presentation-hello">
+                        <span >
+                            <span>H</span>
+                            <span>e</span>
+                            <span>l</span> 
+                            <span>l</span> 
+                            <span>o</span>
+                            <span>! </span> 
+                        </span> 
+                        <span> I'</span>
+                        <span>m</span> 
+                    </h2>
+                </div>
+        </div>
+        <section class="about">
+            <h3>Qui suis-je ?</h3>
+            <p>Après une carrière dans le commerce principalement axée dans le milieu de la téléphonie, j'ai décidé de changer de voie et de me reconvertir dans un domaine qui me permettrait de m'épanouir : le développement web.</p>
+            <p>Fraîchement diplômé de ma formation de Développeur Web où j'ai pu réaliser certains projets et voir le métier dans son ensemble, je souhaite aujourd'hui intégrer une équipe, essentiellement en full remote. Même si j'ai un léger penchant pour le côté front-end, j'aime tout autant cet aspect full-stack où je peux intervenir sur l'ensemble d'un projet. Vous trouverez l'ensemble de mes réalisations ci-après. </p>
+        </section>
+        <section id="projects">
+            <h3 class="projects-section-title">Mes projets réalisés</h3>
+            <ul class="projects-list">
+                <li>
+                        <h3>Oh My Food</h3>
+                        <p> À partir de maquettes mobiles, création de la page d'accueuil OhMyFood ainsi que chacune des pages correspondant aux cartes de restaurants, le tout entièrement responsive.</p>
+                        <p>Intégration d'animations comme demandé dans le cahier des charges : </br>
+                            <i class="far fa-hand-point-right"></i> Loader pour la page d'accueil</br>
+                            <i class="far fa-hand-point-right"></i> Remplissage des coeurs au survol ou au clic</br>
+                            <i class="far fa-hand-point-right"></i> Effet d'apparition en décalé des plats à l'ouverture d'une carte</br>
+                            <i class="far fa-hand-point-right"></i> Effet de coche apparaissant au survol du plat</br>  
+                        </p>
+                        <h4>Les technos utilisées :</h4>
+                        <div class="projects-list-listimg">
+                            <img class="projects-list-img" src="./images/html.png" alt="logo html5"/>
+                            <img class="projects-list-img" src="./images/css.jpg" alt="logo css"/>
+                            <img class="projects-list-img" src="./images/sass.jpg" alt="logo sass"/>
+                        </div>
+                        <div class="projects-list-btn">
+                            <a target="_blank" href="https://khalan1789.github.io/OhMyFood/">Voir le projet</a>
+                            <a target="_blank" href="https://github.com/khalan1789/Project-Reservia">Le code source</a>
+                        </div>
+                    </li>
+                <li>
+                        <h3>So Pekocko</h3>
+                        <p>La partie front-end ayant déjà créée auparavant, j'ai été chargé de la partie back-end : création d'une API sécurisée et d'une base de donnée MongoDB Atlas.</p>
+                        <h4>Les technos utilisées :</h4>
+                        <div class="projects-list-listimg">
+                            <img class="projects-list-img" src="./images/express.jpg" alt="logo express"/>
+                            <img class="projects-list-img" src="./images/nodejs.png" alt="logo nodejs"/>
+                            <img class="projects-list-img" src="./images/mongoDB.jpeg" alt="logo mongoDB"/>
+                            <img class="projects-list-img" src="./images/mongoose.png" alt="logo mongoose"/>
+                            <img class="projects-list-img" src="./images/postman.png" alt="logo postman"/>
+                        </div>
 
-                    <div class="projects-list-btn">
-                        <a target="_blank" href="https://github.com/khalan1789/So-Pejocko-Project">Voir le projet</a>
-                    </div>
+                        <div class="projects-list-btn">
+                            <a target="_blank" href="https://github.com/khalan1789/So-Pejocko-Project">Voir le projet</a>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Groupomania</h3>
+                        <p>Réalisation from scratch d'un réseau social interne d'entreprise pour la société Groupomania suivant un cahier des charges prédéfini : </br>
+                        </br><i class="fas fa-hand-point-right"></i> Base de données sous MySQL </br>
+                            <i class="fas fa-hand-point-right"></i> Serveur sous NodeJs / Express </br>
+                            <i class="fas fa-hand-point-right"></i> Front-end en JS avec liberté d'utilisation d'un framework ou non </br>
+                            <i class="fas fa-hand-point-right"></i> Possibilité de partager des articles et/ou des images, ainsi que de les commenter </br>
+                            <i class="fas fa-hand-point-right"></i> Mise en place d'un système de modération </br>
+                        </p>
+                        <h4>Les technos utilisées :</h4>
+                        <div class="projects-list-listimg">
+                            <img class="projects-list-img" src="./images/vuejs.png" alt="logo VueJS"/>
+                            <img class="projects-list-img" src="./images/bootstrap.png" alt="logo Bootstrap"/>
+                            <img class="projects-list-img" src="./images/express et node.jpg" alt="logos Express et NodeJS"/>
+                            <img class="projects-list-img" src="./images/sequelize.png" alt="logo Sequelize"/>
+                            <img class="projects-list-img" src="./images/mysql.png" alt="logo MySQL"/>
+                        </div>
+                        <div class="projects-list-btn">
+                        <a target="_blank" href="https://github.com/khalan1789/Groupomania-Social-Network-Project">Voir le projet</a>
+                        </div>
                 </li>
                 <li>
-                    <h3>Groupomania</h3>
-                    <p>Réalisation from scratch d'un réseau social interne d'entreprise pour la société Groupomania suivant un cahier des charges prédéfini : </br>
-                    </br><i class="fas fa-hand-point-right"></i> Base de données sous MySQL </br>
-                        <i class="fas fa-hand-point-right"></i> Serveur sous NodeJs / Express </br>
-                        <i class="fas fa-hand-point-right"></i> Front-end en JS avec liberté d'utilisation d'un framework ou non </br>
-                        <i class="fas fa-hand-point-right"></i> Possibilité de partager des articles et/ou des images, ainsi que de les commenter </br>
-                        <i class="fas fa-hand-point-right"></i> Mise en place d'un système de modération </br>
-                    </p>
+                        <h3>La Chouette Agence</h3>
+                        <p><i class="far fa-hand-point-right"></i> Réalisation d'un audit SEO du site La Chouette Agence et création d'un rapport en tenant compte des contraintes d'accessibilité. 
+                        </br><i class="fas fa-hand-point-right"></i> Optimisation et refonte du code en y apportant 10 améloriations issues du rapport et ce ne modifiant uniquement que les parties HTML et CSS. </p>
+                        <h4>Les technos utilisées :</h4>
+                        <div class="projects-list-listimg">
+                            <img class="projects-list-img" src="images/lighthouse.png" alt="logo lighthouse"/>
+                            <img class="projects-list-img" src="images/wave.png" alt="logo wave"/>
+                            <img class="projects-list-img" src="images/W3C.png" alt="logo w3c"/>
+                            <img class="projects-list-img" src="images/nvda.png" alt="logo nvda"/>
+                            <img class="projects-list-img" src="./images/html.png" alt="logo html5"/>
+                            <img class="projects-list-img" src="./images/css.jpg" alt="logo css"/>
+                        </div>
+                        <div class="projects-list-btn">Pour le projet avant modification : <br>
+                            <a target="_blank" href="https://khalan1789.github.io/P4_La_chouettte_agence_avant_optimisation/">Voir le projet avant</a> 
+                            <a target="_blank" href="https://github.com/khalan1789/P4_La_chouettte_agence_avant_optimisation"><i>Le code source</i></a>
+                        </div>
+                        <div class="projects-list-btn">Pour le projet après modification : <br>
+                            <a target="_blank" href="https://khalan1789.github.io/La_Chouette_agence_optimised/">Voir le projet après</a>
+                            <a target="_blank" href="https://github.com/khalan1789/La_Chouette_agence_optimised"><i>Le code source</i></a>
+                        </div>
+                </li>
+                <li>
+                        <h3>Orinoco</h3>
+                        <p>Réalisation de la partie front-end du site e-commerce Orinoco en JavaScript Vanilla, la partie back-end ayant déjà été créée et fournie.</p>
+                        <h4>Les technos utilisées :</h4>
+                        <div class="projects-list-listimg">
+                            <img class="projects-list-img" src="./images/JS.png" alt="logo Javascript"/>
+                            <img class="projects-list-img" src="./images/bootstrap.png" alt="logo Bootstrap"/>
+                            <img class="projects-list-img" src="./images/html.png" alt="logo html5"/>
+                            <img class="projects-list-img" src="./images/css.jpg" alt="logo css"/>
+                        </div>
+                        <div class="projects-list-btn"> 
+                            <a target="_blank" href="https://github.com/khalan1789/Groupomania-Social-Network-Project">Voir le projet</a>
+                        </div>
+                </li>
+                <li>
+                    <h3>Reservia</h3>
+                    <p>À partir de deux maquettes, l'une en version desktop et l'autre en version mobile, création d'une page web entièrement responsive du site Réservia.</p>
                     <h4>Les technos utilisées :</h4>
                     <div class="projects-list-listimg">
-                        <img class="projects-list-img" src="./images/vuejs.png" alt="logo VueJS"/>
-                        <img class="projects-list-img" src="./images/bootstrap.png" alt="logo Bootstrap"/>
-                        <img class="projects-list-img" src="./images/express et node.jpg" alt="logos Express et NodeJS"/>
-                        <img class="projects-list-img" src="./images/sequelize.png" alt="logo Sequelize"/>
-                        <img class="projects-list-img" src="./images/mysql.png" alt="logo MySQL"/>
+                        <img class="projects-list-img" src="./images/html.png" alt="logo html5"/><img class="projects-list-img" src="./images/css.jpg" alt="logo css"/>
                     </div>
                     <div class="projects-list-btn">
-                    <a target="_blank" href="https://github.com/khalan1789/Groupomania-Social-Network-Project">Voir le projet</a>
-                    </div>
-               </li>
-               <li>
-                    <h3>La Chouette Agence</h3>
-                    <p><i class="far fa-hand-point-right"></i> Réalisation d'un audit SEO du site La Chouette Agence et création d'un rapport en tenant compte des contraintes d'accessibilité. 
-                    </br><i class="fas fa-hand-point-right"></i> Optimisation et refonte du code en y apportant 10 améloriations issues du rapport et ce ne modifiant uniquement que les parties HTML et CSS. </p>
-                    <h4>Les technos utilisées :</h4>
-                    <div class="projects-list-listimg">
-                        <img class="projects-list-img" src="images/lighthouse.png" alt="logo lighthouse"/>
-                        <img class="projects-list-img" src="images/wave.png" alt="logo wave"/>
-                        <img class="projects-list-img" src="images/W3C.png" alt="logo w3c"/>
-                        <img class="projects-list-img" src="images/nvda.png" alt="logo nvda"/>
-                        <img class="projects-list-img" src="./images/html.png" alt="logo html5"/>
-                        <img class="projects-list-img" src="./images/css.jpg" alt="logo css"/>
-                    </div>
-                    <div class="projects-list-btn">Pour le projet avant modification : <br>
-                        <a target="_blank" href="https://khalan1789.github.io/P4_La_chouettte_agence_avant_optimisation/">Voir le projet avant</a> 
-                        <a target="_blank" href="https://github.com/khalan1789/P4_La_chouettte_agence_avant_optimisation"><i>Le code source</i></a>
-                    </div>
-                    <div class="projects-list-btn">Pour le projet après modification : <br>
-                        <a target="_blank" href="https://khalan1789.github.io/La_Chouette_agence_optimised/">Voir le projet après</a>
-                        <a target="_blank" href="https://github.com/khalan1789/La_Chouette_agence_optimised"><i>Le code source</i></a>
-                    </div>
-               </li>
-               <li>
-                    <h3>Orinoco</h3>
-                    <p>Réalisation de la partie front-end du site e-commerce Orinoco en JavaScript Vanilla, la partie back-end ayant déjà été créée et fournie.</p>
-                    <h4>Les technos utilisées :</h4>
-                    <div class="projects-list-listimg">
-                        <img class="projects-list-img" src="./images/JS.png" alt="logo Javascript"/>
-                        <img class="projects-list-img" src="./images/bootstrap.png" alt="logo Bootstrap"/>
-                        <img class="projects-list-img" src="./images/html.png" alt="logo html5"/>
-                        <img class="projects-list-img" src="./images/css.jpg" alt="logo css"/>
-                    </div>
-                    <div class="projects-list-btn"> 
-                        <a target="_blank" href="https://github.com/khalan1789/Groupomania-Social-Network-Project">Voir le projet</a>
-                    </div>
-               </li>
-               <li>
-                <h3>Reservia</h3>
-                <p>À partir de deux maquettes, l'une en version desktop et l'autre en version mobile, création d'une page web entièrement responsive du site Réservia.</p>
-                <h4>Les technos utilisées :</h4>
-                <div class="projects-list-listimg">
-                    <img class="projects-list-img" src="./images/html.png" alt="logo html5"/><img class="projects-list-img" src="./images/css.jpg" alt="logo css"/>
-                </div>
-                <div class="projects-list-btn">
-                  <a target="_blank" href="https://khalan1789.github.io/Project-Reservia/">Voir le projet</a>
-                   <a target="_blank" href="https://github.com/khalan1789/Project-Reservia">Le code source</a>
-                </div>  
-           </li>
-           </ul>
-       </section>
-   </main>
-   <footer id="footer">
-       <h3><i class="far fa-hand-point-down finger-left"></i>  Pour me contacter  <i class="far fa-hand-point-down finger-right"></i></h3>
-       <div class="footer-link">
-           <a target="_blank" href="https://www.linkedin.com/in/benjamin-ducau/"><img  class="footer-link-logo" src="./images/linkedin2.png" alt="logo linkedin"/></a>
-           <a href="mailto:ducaubenjamin@gmail.com"><img  class="footer-link-logo" src="./images/gmail.jpeg" alt="logo gmail"/></a>
-       </div>
-       <h5 aria-label="lien pour revenir en haut de la page"><a class="footer-link-back" href="#header-zone">Retour en haut</a></h5>
-   </footer>
+                    <a target="_blank" href="https://khalan1789.github.io/Project-Reservia/">Voir le projet</a>
+                    <a target="_blank" href="https://github.com/khalan1789/Project-Reservia">Le code source</a>
+                    </div>  
+            </li>
+            </ul>
+        </section>
+        </main>
+        <footer id="footer">
+        <h3><i class="far fa-hand-point-down finger-left"></i>  Pour me contacter  <i class="far fa-hand-point-down finger-right"></i></h3>
+        <div class="footer-link">
+            <a target="_blank" href="https://www.linkedin.com/in/benjamin-ducau/"><img  class="footer-link-logo" src="./images/linkedin2.png" alt="logo linkedin"/></a>
+            <a href="mailto:ducaubenjamin@gmail.com"><img  class="footer-link-logo" src="./images/gmail.jpeg" alt="logo gmail"/></a>
+        </div>
+        <h5 aria-label="lien pour revenir en haut de la page"><a class="footer-link-back" href="#header-zone">Retour en haut</a></h5>
+        </footer>
+    </div>
    <script src="main.js"></script>
 </body>
 </html>

@@ -1,0 +1,27 @@
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    animation: end-loading 2s 3.5s forwards;
+    border-bottom: 2px solid black ;
+    box-shadow: 2x 12px 4px white ;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.loader-img{
+    width: 100px;
+    height: 100px;
+    animation: loading 4s ease-in-out forwards;
+    @media all and (min-width: 900px) {
+        width: 120px;
+    height: 120px;
+    }
+}

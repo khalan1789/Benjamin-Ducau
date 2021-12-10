@@ -9,3 +9,16 @@ burgerLink.addEventListener('click' , (e) =>{
     burger.classList.toggle('open');
     burgerListLink.classList.toggle('open');
 })
+
+// hidde main site during loader and appear it at the end
+
+let mainSite = document.querySelector(".main-zone")
+
+function appearMainSite () {
+    mainSite.classList.remove("hidden")
+}
+function apparition (){
+    setTimeout(appearMainSite, 3500)
+}
+
+apparition ();
