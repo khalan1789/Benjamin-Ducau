@@ -1,3 +1,7 @@
+.hand-color {
+  color: #09b674;
+}
+
 @keyframes loading {
   5% {
     transform: scale(0.9);
@@ -392,6 +396,12 @@ h1 {
 .about p {
   font-size: 1.1em;
   text-align: justify;
+}
+@media all and (min-width: 1250px) {
+  .about p {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
 }
 
 footer {
