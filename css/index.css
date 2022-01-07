@@ -282,6 +282,11 @@ h1 {
   text-shadow: 2px 1px 5px white;
   font-weight: bold;
 }
+@media all and (min-width: 1400px) {
+  .projects-section-title {
+    margin: 2% 10%;
+  }
+}
 
 .projects-list {
   list-style-type: none;
@@ -388,6 +393,11 @@ h1 {
 .about {
   margin: 2%;
 }
+@media all and (min-width: 1400px) {
+  .about {
+    margin: 2% 10%;
+  }
+}
 .about h3 {
   border-bottom: 3px solid #09b674;
   text-shadow: 2px 1px 5px white;
@@ -407,11 +417,21 @@ h1 {
 footer {
   margin: 2%;
 }
+@media all and (min-width: 1400px) {
+  footer {
+    margin: 2% 10%;
+  }
+}
 footer h3 {
   border-bottom: 3px solid #09b674;
   text-shadow: 2px 1px 5px white;
   font-weight: bold;
   text-align: center;
+}
+@media all and (min-width: 1600px) {
+  footer h3 {
+    padding-bottom: 5px;
+  }
 }
 footer a {
   margin: 2%;
