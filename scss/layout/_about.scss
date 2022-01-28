@@ -1,14 +1,17 @@
-.about{
-    margin: 2%;
-    h3{
-        @include title-section-decoration
+.about {
+  margin: 2%;
+  @media all and (min-width: 1400px) {
+    @include margin-big-screen;
+  }
+  h3 {
+    @include title-section-decoration;
+  }
+  p {
+    font-size: 1.1em;
+    text-align: justify;
+    @media all and (min-width: 1250px) {
+      margin-left: 3%;
+      margin-right: 3%;
     }
-    p{
-        font-size: 1.1em;
-        text-align: justify;
-        @media all and (min-width: 1250px){
-            margin-left: 3%;
-            margin-right: 3%;
-        }
-    }
+  }
 }
