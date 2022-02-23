@@ -99,3 +99,12 @@
     height: 150px;
   }
 }
+
+// Zone projets en cours
+
+.next-projects-list{
+  margin: 2%;
+  @media all and (min-width: 1400px) {
+    @include margin-big-screen;
+  }
+}

@@ -390,6 +390,15 @@ h1 {
   }
 }
 
+.next-projects-list {
+  margin: 2%;
+}
+@media all and (min-width: 1400px) {
+  .next-projects-list {
+    margin: 2% 10%;
+  }
+}
+
 .about {
   margin: 2%;
 }
