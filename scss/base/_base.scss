@@ -8,3 +8,11 @@ a{
     text-decoration: none;
     color:white;
 }
+
+.groupomania-link{
+    text-decoration: underline $tercary;
+    &:hover{
+        color: $tercary;
+        font-weight: bold;
+    }
+}
