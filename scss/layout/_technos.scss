@@ -1,0 +1,83 @@
+#technos{
+  img{
+    width:75px;
+    height:75px
+  }
+  li {
+    margin: 25px 20px
+  }
+}
+
+.technos-section-title{
+ margin: 2%;
+    @include title-section-decoration;
+    @media all and (min-width: 1400px) {
+      @include margin-big-screen;
+  }
+}
+
+.technos-div-mains-title{
+text-align: center;
+margin-top: 30px;
+// border-bottom: solid 2px;
+  border: thick double $secondary;
+// border-color: $tercary;
+width: 220px;
+margin-bottom: 20px;
+color: white;
+@media all and (min-width: 500px){
+  width: 400px;
+}
+@media all and (min-width: 950px){
+  width: 450px;
+}
+@media all and (min-width: 1800px){
+  width: 520px;
+}
+}
+
+.technos-ul{
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  li{
+    display:flex;
+  flex-direction: column;
+  align-items: center;
+  small{
+    font-style: italic;
+    margin-top:10px;
+  }
+  }
+}
+
+.technos-front-li{
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  small{
+    font-style: italic;
+    margin-top:10px;
+  }
+}
+
+.technos-subcategory-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.technos-front-subtitles{
+  font-style: italic;
+  // color: $tercary;
+  width : 100px;
+  border-top: thick double $tercary;
+  border-bottom: thick double $tercary;
+  // border-left: solid  $tercary;
+  // border-right: dashed $tercary;
+  text-align: center;
+  @media all and (min-width: 950px){
+  width: 150px;
+}
+}

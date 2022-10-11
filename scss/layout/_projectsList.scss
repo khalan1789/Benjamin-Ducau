@@ -43,6 +43,11 @@
       margin-left: 10px;
       margin-right: 10px;
     }
+    small {
+      text-align: center;
+      color: $secondary;
+      font-style: italic;
+    }
   }
 }
 

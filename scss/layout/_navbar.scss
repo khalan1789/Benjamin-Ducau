@@ -16,6 +16,18 @@ nav {
         justify-content: space-between;
     }
     &.nav-mobile-version {
+        li{
+            padding-left: 10px;
+            @media all and (min-width:400px){
+            padding-left: 20px;
+            }
+            @media all and (min-width:520px){
+            padding-left: 25px;
+            }
+            @media all and (min-width:650px){
+            padding-left: 0;
+        }
+        }
         @media all and (min-width:980px){
             display: none;
         }
@@ -65,11 +77,17 @@ nav {
                 height: 80px;
         }
         @media all and (min-width:980px){
-            width: 50%;
+            width: 70%; // recifié avec ajout technos
             flex-direction: row;
             justify-content: flex-end;
             transform: scaleY(1);
             height: 50px;
+        }
+        @media all and (min-width:1200px){
+            width: 60%; // recifié avec ajout technos
+        }
+          @media all and (min-width:1700px){
+            width: 50%; // recifié avec ajout technos
         }
         &.open{
                 transform:scaleY(1);
