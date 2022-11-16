@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -81,18 +81,57 @@
         </div>
           <section>
             <h3 class="projects-section-title">Mes projets en cours</h3>
-            <p class="next-projects-list"><i class="fas fa-hand-point-right hand-color"></i> Création d'une application de gestion des comptes bancaires côté front-end suite au challenge BSWARM, projet collaboratif avec trois autres développeurs et développeuses. Au programme : </br> 
-                </br> 
-            - environnement React et Tailwind pour le CSS    </br> 
-            - pair programming (voir mob programming) </br> 
-            - code review </br> 
-            - mise en place des tests : Jest, React Testing Library</br>
-            - outils : Jira, GitLab, Figma, Yarn, Prettier
+            <p class="next-projects-list">
+                <i class="fas fa-hand-point-right hand-color"></i> Initiation au dev ops </br> 
+                <i class="fas fa-hand-point-right hand-color"></i> Apprentissage de typescript </br>       
             </p>   
         </section>
         <section id="projects">
             <h3 class="projects-section-title">Mes projets réalisés</h3>
             <ul class="projects-list">
+                <li>
+                        <h3>MoneyThunes</h3>
+                        <small>Projet collaboratif : mai-novembre 2022</small>
+                        <p> Suite au lancement d'un challenge, j'ai été choisi par BeSwarm pour intégrer une équipe avec 3 autres développeurs, afin de réaliser la partie front-end d'une application de gestion de comptes bancaires. Avec une particularité : l'utilisateur doit être authentifié via son compte BeSwarm pour pouvoir avoir accès à l'application, via un protocole Oauth2.</p>
+                        <p>Ainsi nous avions donc de fourni : les routes API via un fichier Swagger, un accès à un compte pour notre application qui utilise leur base de donnée. À partir de ces éléments là nous avons dû réfléchir, maquetter et mettre en place cette application, le style étant libre. Nous avons donc choisi, ensemble, les technos à utiliser, le mode de fonctionnement, les modes de communication.</br>
+                        </br>
+                             <i class="far fa-hand-point-right hand-color"></i> Utilisation de React avec TailwindCSS pour le style</br>
+                            <i class="far fa-hand-point-right hand-color"></i> Mise en place des test avec Jest et React testing library </br>
+                            <i class="far fa-hand-point-right hand-color"></i> Utilisation de GitLab, Git pour le versionning </br>
+                            <i class="far fa-hand-point-right hand-color"></i> Utilisation de Figma pour les maquettes, Swagger pour les routes API, Oauth2 pour l'authentification, Notion et Jira pour le partage d'infos</br>
+                            <i class="far fa-hand-point-right hand-color"></i> Mise en place de sessions de pair-programming, de communications asynchrones et de mise au point hebdomadaires</br>
+                        </p>
+
+                        <p>Au fil des mois, certains de mes camarades, pour diverses raisons, ont dû stopper l'aventure. Petit à petit nous nous sommes retrouvés à 3, puis 2 et enfin j'ai du continuer seul les deux derniers mois. Malgré ma détermination à aller au bout des choses, le projet a été arrêté mi-novembre 2022. </br>
+                        </br>Voici les tâches que j'ai réalisé dans ce projet : </br>
+                        </br><i class="fas fa-hand-point-right hand-color"></i> Rédaction du cahier des charges </br>
+                        <i class="fas fa-hand-point-right hand-color"></i> Mise en place des tests via Jest et React Testing Library </br>
+                        <i class="fas fa-hand-point-right hand-color"></i> Intégration de composants suivant la maquette </br>
+                        <i class="fas fa-hand-point-right hand-color"></i> Intégration de pages suivant la maquette </br>
+                        <i class="fas fa-hand-point-right hand-color"></i> Maintenance et évolution des fonctionnalités, ainsi que des styles de l'application</br>
+                        <i class="fas fa-hand-point-right hand-color"></i> Enregistrement des avancées et déploiement sur les branches appropriées sur GitLab (merge, merge request et pull request)</p>
+                    </p>
+                        <h4>Les technos utilisées :</h4>
+                        <div class="projects-list-listimg">
+                            <img class="projects-list-img" src="./images/react.svg" alt="logo react"/>
+                            <img class="projects-list-img" src="./images/tailwindCSS.svg" alt="logo css"/>
+                            <img class="projects-list-img" src="./images/React_testing_library.png" alt="logo react testing library"/>
+                            <img class="projects-list-img" src="./images/Jest.svg" alt="logo jest"/>
+                            <img class="projects-list-img" src="./images/gitlab.svg" alt="logo gitlab"/>
+                            <img class="projects-list-img" src="./images/git.svg" alt="logo git"/>
+                            <img class="projects-list-img" src="./images/figma-svg.svg" alt="logo figma"/>
+                        </div>
+                        <div class="projects-list-btn">
+                             <button id="appearVideoButton" class="">Voir un aperçu </button>
+                             <button id="closeVideoViewerButton" class="hidden">Fermer l'aperçu</button>
+                        </div>
+                        <div class="projects-list-video" id="projectVideoViewer">
+                            <video  muted controls preload="metadata" id="projectVideo">
+                            <source src="/videos/MoneyThunesDemo.mp4" type="video/mp4">
+                            Votre navigateur n'est pas à jour si vous ne voyez pas cette vidéo !
+                        </video>
+                        </div>
+                </li>
                 <li>
                         <h3>StackOverFlou</h3>
                         <small>Réalisation personnelle 2022</small>

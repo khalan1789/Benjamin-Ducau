@@ -22,3 +22,25 @@ function apparition (){
 }
 
 apparition ();
+
+
+const appearVideoButton = document.getElementById('appearVideoButton')
+const projectVideoViewer = document.getElementById('projectVideoViewer')
+const closeVideoViewerButton = document.getElementById('closeVideoViewerButton')
+const video = document.getElementById('projectVideo')
+
+appearVideoButton.addEventListener('click', (e) => {
+    e.preventDefault()
+    projectVideoViewer.classList.toggle('open')
+    closeVideoViewerButton.classList.toggle('hidden')
+   appearVideoButton.classList.toggle('hidden')
+})
+
+closeVideoViewerButton.addEventListener('click', (e) => {
+    e.preventDefault()
+    projectVideoViewer.classList.toggle('open')
+    appearVideoButton.classList.toggle('hidden')
+    closeVideoViewerButton.classList.toggle('hidden')
+    projectVideo.pause()
+})
+
