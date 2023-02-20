@@ -500,6 +500,11 @@ h1 {
   display: none;
 }
 
+.ArenaLink {
+  color: #09b674;
+  font-style: italic;
+}
+
 .about {
   margin: 2%;
 }
