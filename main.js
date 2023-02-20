@@ -23,10 +23,10 @@ function apparition (){
 
 apparition ();
 
-
+// for MoneyThunes
 const appearVideoButton = document.getElementById('appearVideoButton')
-const projectVideoViewer = document.getElementById('projectVideoViewer')
 const closeVideoViewerButton = document.getElementById('closeVideoViewerButton')
+const projectVideoViewer = document.getElementById('projectVideoViewer')
 const video = document.getElementById('projectVideo')
 
 appearVideoButton.addEventListener('click', (e) => {
@@ -44,3 +44,23 @@ closeVideoViewerButton.addEventListener('click', (e) => {
     projectVideo.pause()
 })
 
+// for findyoursuperhero
+const showInsightButton = document.getElementById('showInsightButton')
+const closeInsightButton = document.getElementById('closeInsightButton')
+const insightVideoViewer = document.getElementById('insightVideoViewer')
+const insightVideo = document.getElementById('insightVideo')
+
+showInsightButton.addEventListener('click', (e) => {
+    e.preventDefault()
+    insightVideoViewer.classList.toggle('open')
+    closeInsightButton.classList.toggle('hidden')
+   showInsightButton.classList.toggle('hidden')
+})
+
+closeInsightButton.addEventListener('click', (e) => {
+    e.preventDefault()
+    insightVideoViewer.classList.toggle('open')
+    closeInsightButton.classList.toggle('hidden')
+    showInsightButton.classList.toggle('hidden')
+    insightVideo.pause()
+})
