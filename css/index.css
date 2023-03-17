@@ -441,6 +441,13 @@ h1 {
   display: flex;
 }
 
+@media all and (min-width: 900px) {
+  .projects-list-btn-adjusted {
+    padding: 1.5px;
+    font-size: 0.85rem;
+  }
+}
+
 .projects-list-listimg {
   display: flex;
   flex-wrap: wrap;

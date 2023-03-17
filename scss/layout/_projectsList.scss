@@ -70,6 +70,13 @@
   }
 }
 
+.projects-list-btn-adjusted{
+  @media all and(min-width: 900px) {
+   padding: 1.5px;
+   font-size: 0.85rem;
+  }
+}
+
 .projects-list-listimg {
   display: flex;
   flex-wrap: wrap;
