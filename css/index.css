@@ -512,6 +512,11 @@ h1 {
   font-style: italic;
 }
 
+.ExternalLink {
+  color: #4aaaf3;
+  font-weight: bold;
+}
+
 .about {
   margin: 2%;
 }
