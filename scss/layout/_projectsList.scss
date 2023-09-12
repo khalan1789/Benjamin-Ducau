@@ -21,7 +21,7 @@
     border-radius: 3px;
     margin: 15px;
     box-shadow: 0px 0px 4px 2px $secondary;
-    padding: 4px;
+    padding: 4px 20px 4px 20px;
     @media all and (min-width: 900px) {
       width: 80%;
     }
@@ -118,6 +118,66 @@
     transition: ease-in-out 1s;
       display:flex;
   }
+}
+
+.project-list-arena{
+  display: flex;
+  // flex-direction: column;
+      flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  @media all and(min-width: 650px){ 
+
+  max-width: 800px;
+  }
+   @media all and(min-width: 1350px){ 
+
+  max-width: 1000px;
+  }
+  @media all and(min-width: 1730px){ 
+
+  max-width: 1200px;
+   justify-content: center;
+
+  }
+   @media all and(min-width: 2400px){ 
+
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1500px;
+  }
+  // max-height: 400px;
+
+}
+
+.arena-image{
+ 
+  height: 200px;
+  width: 200px;
+  margin-bottom: 20px;
+
+ @media all and(min-width: 600px){ 
+    max-height: 220px;
+    max-width: 220px;
+    margin: 5px;
+  
+  }
+  img{
+      object-fit: contain;
+      width:100%;
+      height: 100%;
+  }
+  
+}
+
+.arena-certificate{
+  @media all and(min-width: 2400px){ 
+     width: 100%;
+  display: flex;
+  justify-content: center;
+  
+  }
+ 
 }
 // Zone projets en cours
 
